@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}  
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    color: white;
+    /* font-family: "Montserrat", sans-serif; */
+    background-color: #000000;
+background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1.1px, transparent 1.1px),
+                  linear-gradient(to right, rgba(255, 255, 255, 0.1) 1.1px, #000000 1.1px);
+background-size: 60px 60px;
+font-family: "Fira Sans Condensed", sans-serif;
+font-weight: 400;
+font-style: normal;
+} 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-inline: 3rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+a{
+    all: unset;
+    cursor: pointer;
+}
+.imajpres{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 16rem;
+    padding-top: 6rem;
+    align-items: center;
+    gap: 2rem;
+}
+h1, p{
+    margin: 0;
+
+}
+h1{
+    font-size: 50px;
+    padding-bottom: 1rem;
+}
+img{
+    border-radius: 0.5rem;
+}
+button{
+    all: unset;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 9999px;
+    padding-block: 0.7rem;
+    padding-inline: 1rem;
+    color: black;
+}
+.comp{
+    padding-top: 5rem;
+}
+.pad{
+    padding-top: 15rem;
+}
+/* Le texte est visible au départ, mais nous voulons une animation fluide */
+#texte {
+    opacity: 1; /* Invisible au départ */
+    transition: opacity 1s ease-in-out; /* Transition pour l'opacité */
+}
+
+/* Quand le texte devient visible (au scroll ou au clic) */
+#texte.visible {
+    opacity: 1; /* Complètement visible */
+}
+
+/* Assurez-vous que le texte soit toujours dans le flux du document */
+html {
+    scroll-behavior: smooth; /* Défilement fluide vers la section */
+}
+
