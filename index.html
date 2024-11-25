@@ -1,1 +1,59 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/logo awe.png">
+    <title>Mon Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <img src="public/logo_awe-removebg-preview.png" alt="logo" height="60" width="60">
+        <nav>
+            <a href="">Accueil</a>
+            <a href="">Compétences</a>
+            <a href="#texte">Projets</a>
+            <a href="">Stage</a>
+            <a href="">Veille technologique</a>
+            <a href="">Epreuves</a>
+        </nav>
+        <button>voir mon CV</button>
+    </header>
+    <section class="imajpres">
+        <div>
+            <h1>Bonjour, Je suis ASSAF Jafar Dylan</h1>
+            <p>Je suis étudiant en BTS SIO SLAM 2eme année passionné par l'informatique. Bienvenue dans mon univers ! </p>
+        </div>
+            
+            <img src="public/image.png" height="300" width="400" alt="mon image">
+    </section>
+      <center>
+        <h1 class="comp">Compétences</h1>
+      </center>
+      <center>
+        <div id="texte">
+             <h1>eciofezhifpjrzpi</h1>
+        </div>
+      </center>
+      <script>
+        document.querySelector("a[href='#texte']").addEventListener("click", function(event) {
+            event.preventDefault();
+            
+            let texte = document.getElementById("texte");
+            texte.classList.add("visible");
+    
+            // Pour que l'animation d'opacité se produise au moment du scroll
+            setTimeout(function() {
+                document.getElementById("texte").scrollIntoView({behavior: 'smooth'});
+            }, 100);
+        });
+    </script>
+    
+
+    </section>
+</body>
+
+</html>
