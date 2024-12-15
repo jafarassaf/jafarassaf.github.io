@@ -13,51 +13,122 @@
     <header>
         <img src="logo_awe-removebg-preview.png" alt="logo" height="60" width="60">
         <nav>
-            <a href="">Accueil</a>
-            <a href="">Compétences</a>
-            <a href="#texte">Projets</a>
-            <a href="">Stage</a>
-            <a href="">Veille technologique</a>
-            <a href="">Epreuves</a>
+            <button name="accueil">Accueil</button>
+            <button name="compe">Compétences</button>
+            <button name="prjt">Projets</button>
+            <button name="stage">Stage</button>
+            <button name="vt">Veille technologique</button>
+            <button name="ep">Epreuve E4</button>
         </nav>
-        <button>voir mon CV</button>
+        <a href="ASSAF_Jafar_CV.pdf" target="_blank">
+            <button class="whitebutton">Voir mon CV</button>
+        </a>
     </header>
-    <section class="imajpres">
+    <section id="accueil" class="imajpres">
         <div>
             <h1>Bonjour, Je suis ASSAF Jafar Dylan</h1>
-            <p>Je suis étudiant en BTS SIO SLAM 2eme année passionné par l'informatique. Bienvenue dans mon univers ! </p>
+            <p>Je suis étudiant en BTS SIO SLAM 2eme année passionné par l'informatique. Bienvenue dans mon univers !
+            </p>
         </div>
-            
-            <img src="s.jpg" height="300" width="400" alt="mon image">
+        <img src="s.jpg" height="300" width="400" alt="mon image">
     </section>
-      <center>
-        <h1 class="comp">Compétences</h1>
-      </center>
-      <center>
-        <div id="texte" class="pd">
-             <h1>Itération-2</h1>
-             <a href="code.pdf" target="_blank">
-            <Button>Voir Documentation</Button>
-            </a>
-            
+    <center id="compe">
+        <h1>Compétences</h1>
+    </center>
+    <section class="icones">
+        <div class="pere">
+            <div>
+                <img src="codehtml.png" alt="logo HTML" width="65px" height="65px">
+                <p>HTML</p>
+                <span>Niveau avancé</span>
+            </div>
+            <div>
+                <img src="codecss.png" alt="logo CSS" width="65px" height="65px">
+                <p>CSS</p>
+                <span>Niveau avancé</span>
+            </div>
+            <div>
+                <img src="java.png" alt="logo java" width="70px" height="70px">
+                <p>JAVA</p>
+                <span>Niveau intermédiaire</span>
+            </div>
+            <div>
+                <img src="python.png" alt="logo python" width="65px" height="65px">
+                <p>Python </p>
+                <span>Niveau débutant</span>
+            </div>
+            <div>
+                <img src="php.png" alt="logo php" width="65px" height="65px">
+                <p>PHP</p>
+                <span>Niveau intermediaire</span>
+            </div>
+            <div>
+                <img src="sql.png" alt="logo sql" width="65px" height="65px">
+                <p>SQL</p>
+                <span>(Niveau avancé)</span>
+            </div>
         </div>
-      </center>
-      <script>
-        document.querySelector("a[href='#texte']").addEventListener("click", function(event) {
-            event.preventDefault();
-            
-            let texte = document.getElementById("texte");
-            texte.classList.add("visible");
+    </section>
+    <center id="prjt">
+        <h1>Projets</h1>
+    </center>
+    <section class="prjt">
+            <div>
+                <h2>Parking (Itération-2)</h2>
+                <a href="code.pdf" target="_blank">
+                <Button class="whitebutton">Voir Documentation</Button>
+                </a>
+            </div>
+            <div>
+                <h2>Procédure de gestion des accès</h2>
+                <a href="Procédure de la gestion des accès.pdf" target="_blank">
+                <button class="whitebutton">Voir Documentation</button>
+                </a>
+            </div>
+            <div>
+                <h2>Générateur de mot de passe</h2>
+                <a href="Documentation gene.pdf" target="_blank">
+                <button class="whitebutton">Voir Documentation</button>
+                </a>
+            </div>
+    </section>
+    <center id="stage">
+        <h1>Stage</h1>
+    </center>
+    <a class="imgUMS" href=""><img src="UMS-LOGO-750x430.jpg" alt="logo de l'entreprise" width="300px"
+            height="300px"></a>
+    <center id="vt">
+        <h1>Veille technologique</h1>
+    </center>
+    <center id="ep">
+        <h1>Epreuve E4</h1>
+    </center>
+    </section>
+    <script>
+        // Sélectionne tous les liens de navigation
+        const navLinks = document.querySelectorAll('nav button');
     
-            // Pour que l'animation d'opacité se produise au moment du scroll
-            setTimeout(function() {
-                document.getElementById("texte").scrollIntoView({behavior: 'smooth'});
-            }, 100);
+        // Ajoute un écouteur d'événements à chaque lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Empêche le comportement par défaut du lien
+                const targetId = link.getAttribute('name'); // Récupère l'ID de la cible
+                const targetElement = document.getElementById(targetId); // Sélectionne l'élément cible
+    
+                // Défile jusqu'à l'élément cible
+                targetElement.scrollIntoView({
+                    behavior: 'smooth', // Animation fluide
+                    block: 'start' // Aligne avec le haut de la page
+                });
+            });
         });
-    </script>
-    
-
-    </section>
+        window.addEventListener("scroll",()=>{
+            const header = document.querySelector("header")
+            if(window.scrollY > 100){
+                header.classList.add("black_bg")
+            }
+            else header.classList.remove("black_bg")
+        })
+    </script>    
 </body>
-
 </html>
