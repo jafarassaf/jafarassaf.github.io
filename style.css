@@ -71,7 +71,7 @@ a{
     align-items: center;
     gap: 2rem;
 }
-h1, p{
+h1, h2, p{
     margin: 0;
 
 }
@@ -135,10 +135,27 @@ button{
 .icones span{
     opacity: 75%;
 }
-.imgUMS{
-    margin-left: 2rem;
-    padding-top: 9rem;
-}
 center{
     padding-block: 5rem;
+}
+.ums{
+    display: flex;
+    align-items: center;
+    padding-inline: 2rem;
+    font-size: 18px;
+    gap: 2rem;
+}
+.titreums{
+    padding-left: 2rem;
+}
+.veille{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+    gap: 1rem;
+}
+.e4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
