@@ -173,6 +173,14 @@
                 </a>
             </div>
             <div>
+                <img src="portfolio.jpg" alt="logo portfolio" style="width: 98%; height: 53%;">
+                <h2>Portfolio</h2>
+                <p class="projet-description">Portfolio personnel en HTML/CSS. Site responsive avec navigation fluide, design moderne, cartes interactives et intégration de projets, stages et veille technologique.</p>
+                <a href="documentation_portfolio_jafar.pdf" target="_blank">
+                <button class="whitebutton">Voir Documentation</button>
+                </a>
+            </div>
+            <div>
                 <img src="generateur.jpg" alt="logo seven" style="width: 98%; height: 53%;">
                 <h2>Générateur de mot de passe <span style="font-size: 12px; color: #1e88e5; font-weight: normal; display: inline-block;">(Projet personnel)</span></h2>
                 <p class="projet-description">Générateur de mots de passe en Python. Application en ligne de commande avec critères personnalisables (longueur, majuscules, chiffres, symboles) utilisant les bibliothèques random et string.</p>
@@ -308,39 +316,64 @@
         <p>Ces attaques peuvent causer des <em>pertes financières</em>, des <em>atteintes à la réputation</em> et 
             des <em>interruptions de service</em>. Une vigilance constante et des stratégies de sécurité robustes sont donc nécessaires.</p>
 
-        <h2>1ere Étude de cas : Attaque Ransomware contre Change Healthcare</h2>
+        <h2>Étude de cas : Alerte sur le ransomware Medusa par le FBI et la CISA</h2>
         
         <h3>Contexte</h3>
         <p>
-            En <strong>février 2024</strong>, <strong>Change Healthcare</strong>, un processeur majeur de prescriptions appartenant 
-            à UnitedHealth, a subi une attaque par ransomware. Cette attaque a provoqué une perturbation majeure 
-            du système de santé américain pendant plusieurs semaines.
+            Le <strong>20 mars 2025</strong>, le <strong>FBI</strong> et la <strong>CISA</strong> (Agence américaine de cybersécurité) ont publié une alerte conjointe concernant la menace croissante représentée par le ransomware Medusa. Ce logiciel malveillant cible particulièrement les secteurs de l'éducation, de la santé, les administrations publiques et diverses entreprises privées aux États-Unis et à l'international.
         </p>
     
         <h3>Méthode utilisée</h3>
         <p>
-            Les cybercriminels ont déployé un <strong>ransomware</strong> pour chiffrer les données et rendre les systèmes 
-            inaccessibles. Ils ont exigé une rançon de <strong>22 millions de dollars</strong>, montant que UnitedHealth 
-            a fini par payer. Le groupe à l'origine de l'attaque est soupçonné d'avoir des liens avec la Russie.
+            Le ransomware Medusa utilise généralement :
+        </p>
+        <ul>
+            <li>des identifiants compromis (par phishing ou fuites de données),</li>
+            <li>des failles de sécurité non corrigées,</li>
+            <li>ou des accès RDP mal sécurisés pour s'introduire dans les systèmes.</li>
+        </ul>
+        <p>
+            Une fois infiltré, Medusa chiffre les données et menace de les publier si la rançon n'est pas payée (technique dite de double extorsion).
         </p>
     
         <h3>Impact</h3>
         <ul>
-            <li><strong>Perturbation</strong> des services de santé : pharmacies et hôpitaux touchés.</li>
-            <li><strong>Retards</strong> dans le traitement des prescriptions et des paiements.</li>
-            <li><strong>Coût financier</strong> élevé pour UnitedHealth.</li>
+            <li><strong>Vol de données sensibles</strong> avec menace de publication.</li>
+            <li><strong>Perturbations des services</strong> dans les secteurs ciblés.</li>
+            <li><strong>Pressions psychologiques et financières</strong> sur les victimes pour payer la rançon.</li>
+            <li><strong>Risques accrus</strong> pour la réputation des entreprises touchées.</li>
         </ul>
     
         <h3>Réponse et actions</h3>
         <p>
-            UnitedHealth a réagi en payant la rançon pour récupérer l'accès à ses systèmes. L'entreprise a 
-            également renforcé ses mesures de sécurité pour prévenir de futures attaques similaires.
+            Le FBI et la CISA ont recommandé :
         </p>
-        <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares">
-            <button class="whitebutton" >
-                En savoir plus de Ransomware
-            </button>
-        </a>
+        <ul>
+            <li>d'appliquer immédiatement les mises à jour de sécurité,</li>
+            <li>de sécuriser les accès distants (RDP, VPN, MFA),</li>
+            <li>de maintenir des sauvegardes régulières et isolées,</li>
+            <li>d'éduquer les utilisateurs à reconnaître les tentatives de phishing,</li>
+            <li>et de disposer d'un plan de réponse aux incidents.</li>
+        </ul>
+        <p>
+            Les entreprises sont aussi invitées à signaler toute attaque pour aider à la traque des auteurs.
+        </p>
+        
+        <h3>Source</h3>
+        <p>
+            Article : L'Usine Digitale – 20 mars 2025
+        </p>
+        <div class="buttons-container">
+            <a href="https://www.usine-digitale.fr/article/le-fbi-et-l-agence-de-cybersecurite-americaine-alertent-sur-les-dangers-du-ransomware-medusa.N2229057" target="_blank">
+                <button class="sourcebutton">Lire l'article complet</button>
+            </a>
+            <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/rancongiciels-ransomwares" target="_blank">
+                <button class="whitebutton">En savoir plus sur les ransomwares</button>
+            </a>
+            <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/fiches-reflexes/attaques-par-deni-de-service" target="_blank">
+                <button class="whitebutton">En savoir plus sur les attaques DDoS</button>
+            </a>
+        </div>
 
         <h2 style="margin-top: 2.5rem;">Mes sources de veille sur les cyberattaques</h2>
         

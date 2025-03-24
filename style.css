@@ -246,11 +246,11 @@ center{
 }
 
 .avance {
-    background-color: #1e40af;
+    background-color: #047857;
 }
 
 .intermediaire {
-    background-color: #047857;
+    background-color: #1e40af;
 }
 
 .debutant {
@@ -344,11 +344,11 @@ center{
 }
 
 /* Styles pour la section des sources simplifiée */
-.sources-simple {
+.buttons-container {
     display: flex;
+    gap: 15px;
+    margin: 20px 0;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin: 1.5rem 0;
 }
 
 .source-btn {
@@ -377,6 +377,24 @@ center{
 
 .source-btn.map {
     background-color: #e65100;
+}
+
+.sourcebutton {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.sourcebutton:hover {
+    background-color: #0d6efd;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
 /* Styles pour la threatmap simplifiée */
@@ -412,4 +430,12 @@ center{
 .threatmap-btn:hover {
     background-color: #d32f2f;
     transform: scale(1.05);
+}
+
+/* Styles pour la section des sources simplifiée */
+.sources-simple {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
 }
