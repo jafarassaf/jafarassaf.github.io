@@ -140,13 +140,39 @@ center{
 }
 .ums{
     display: flex;
-    align-items: center;
-    padding-inline: 2rem;
-    font-size: 18px;
+    align-items: flex-start;
+    padding: 2rem;
     gap: 2rem;
+    background-color: rgba(18, 18, 18, 0.7);
+    border-radius: 10px;
+    margin: 0 2rem;
+}
+.ums-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+.ums-presentation, .ums-activites {
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 8px;
+    padding: 1rem;
+}
+.ums-liste {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+.ums-liste li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+.ums-label {
+    font-weight: bold;
+    color: #f0f0f0;
 }
 .titreums{
-    padding-left: 2rem;
+    padding-left: 4.1rem;
 }
 .veille{
     display: flex;
@@ -154,8 +180,236 @@ center{
     padding-inline: 2rem;
     gap: 1rem;
 }
-.e4{
+.e5{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.competences {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    gap: 2rem;
+}
+
+.bloc-competence {
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.bloc-titre {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.frontend .icon-container {
+    background-color: #1e40af;
+}
+
+.backend .icon-container {
+    background-color: #c40000cc;
+}
+
+.autres .icon-container {
+    background-color: #7e22ce;
+}
+
+.liste-competences {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.competence {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.niveau {
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+}
+
+.avance {
+    background-color: #1e40af;
+}
+
+.intermediaire {
+    background-color: #047857;
+}
+
+.debutant {
+    background-color: #7e22ce;
+}
+
+.frontend h2, .backend h2, .autres h2 {
+    color: white;
+}
+
+.context {
+    background-color: #047857;
+}
+
+.protocol {
+    background-color: #7e22ce;
+}
+
+.projet-description {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    height: 76px;
+    overflow: hidden;
+}
+
+/* Styles pour la section rapport de stage */
+.rapport-stage {
+    background-color: rgba(18, 18, 18, 0.7);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0 3rem 3rem 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.rapport-content {
+    flex: 2;
+}
+
+.rapport-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.rapport-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #eee;
+}
+
+.rapport-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.rapport-content li {
+    margin-bottom: 0.5rem;
+    color: #ddd;
+}
+
+.rapport-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rapport-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.vt-subtitle {
+    background-color: #B71C1C;
+    color: white;
+    padding: 8px 15px;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* Styles pour la section des sources simplifiée */
+.sources-simple {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.source-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.source-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.source-btn.rss {
+    background-color: #b71c1c;
+}
+
+.source-btn.article {
+    background-color: #004d40;
+}
+
+.source-btn.map {
+    background-color: #e65100;
+}
+
+/* Styles pour la threatmap simplifiée */
+.threatmap-simple {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.threatmap-simple p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.threatmap-btn {
+    display: inline-block;
+    background-color: #b71c1c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.threatmap-btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
 }
